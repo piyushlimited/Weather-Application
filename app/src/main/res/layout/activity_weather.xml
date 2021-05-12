@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeatherActivity">
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:drawablePadding="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/search"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:hint="Search Any City."
+            android:textColor="@color/white"
+            android:background="@drawable/boundary"
+            android:textColorHint="@color/white">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/boundary"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Search">
+        </Button>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:padding="18dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/weatherInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="75sp">
+    </TextView>
+
+
+
+
+    <TextView
+        android:id="@+id/locationInput"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tempInput"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="76sp"
+        android:textStyle="bold"
+        android:textColor="@color/white">
+    </TextView>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".WeatherActivity">
+
+    <ImageView
+        android:id="@+id/userWhetherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:padding="18dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/userWhetherInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="75sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/userLocationInput"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/userTempInput"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="76sp"
+        android:textStyle="bold"
+        android:text="Please Wait...."
+        android:textColor="@color/white">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/userAnotherCitySearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00a5ff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_alignParentBottom="true"
+            android:text="Search for another city?">
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
